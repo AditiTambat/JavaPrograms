@@ -1,35 +1,19 @@
-package ReflectionApi;
+package ReflectionAPI;
 
 public class Person {
 	
-	int birthdate;
 	String name;
-	private String email;
-	protected String address;
-	public String profession;
+	private double salary;
 	
-	 Person(String email) {
+	Person(){
 		
 	}
 	
-	public Person(){
-		
+//	private double getSalary(double salary) {
+//		return salary;
+//	}
+	
+	private void getSalary() {
+		System.out.println("salary is "+this.salary);
 	}
-	
-	private Person(String email,String profession) {
-		
-	}
-	
-	
-	public void addresschange() {
-		System.out.println("address public method");
-	}
-	
-	private void getName(String name) {
-		
-	}
-	
-	
-	
-	
 }
